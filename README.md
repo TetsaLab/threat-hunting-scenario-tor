@@ -102,29 +102,29 @@ DeviceNetworkEvents
 ### 1. File Download - TOR Installer
 
 - **Timestamp:** `2026-10-06T01:44:05.3571493Z`
-- **Event:** The user "employee" downloaded a file named `tor-browser-windows-x86_64-portable-15.0.1.exe` to the Downloads folder.
+- **Event:** The user "sumvulnlab1" downloaded a file named `tor-browser-windows-x86_64-portable-15.0.20.exe` to the Downloads folder.
 - **Action:** File download detected.
-- **File Path:** `C:\Users\sumvulnlab1\Downloads\tor-browser-windows-x86_64-portable-15.0.1.exe`
+- **File Path:** `C:\Users\sumvulnlab1\Downloads\tor-browser-windows-x86_64-portable-15.0.20.exe`
 
 ### 2. Process Execution - TOR Browser Installation
 
-- **Timestamp:** `2024-11-08T22:16:47.4484567Z`
-- **Event:** The user "employee" executed the file `tor-browser-windows-x86_64-portable-15.0.1.exe` in silent mode, initiating a background installation of the TOR Browser.
+- **Timestamp:** `2026-10-06T01:47:16.6569195Z`
+- **Event:** The user "sumvulnlab1" executed the file `tor-browser-windows-x86_64-portable-15.0.20.exe` in silent mode, initiating a background installation of the TOR Browser.
 - **Action:** Process creation detected.
-- **Command:** `tor-browser-windows-x86_64-portable-15.0.1.exe /S`
-- **File Path:** `C:\Users\samvulnlab1\Downloads\tor-browser-windows-x86_64-portable-15.0.1.exe`
+- **Command:** `tor-browser-windows-x86_64-portable-15.0.20.exe /S`
+- **File Path:** `C:\Users\samvulnlab1\Downloads\tor-browser-windows-x86_64-portable-15.0.20.exe`
 
 ### 3. Process Execution - TOR Browser Launch
 
-- **Timestamp:** `2024-11-08T22:17:21.6357935Z`
-- **Event:** User "employee" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
+- **Timestamp:** `2026-10-06T01:48:26.3490486Z`
+- **Event:** User "sumvulnlab1" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
 - **Action:** Process creation of TOR browser-related executables detected.
 - **File Path:** `C:\Users\sumvulnlab1\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
 ### 4. Network Connection - TOR Network
 
-- **Timestamp:** `2024-11-08T22:18:01.1246358Z`
-- **Event:** A network connection to IP `176.198.159.33` on port `9001` by user "employee" was established using `tor.exe`, confirming TOR browser network activity.
+- **Timestamp:** `2026-10-06T01:49:25.005576Z`
+- **Event:** A network connection to IP `91.158.13.188` on port `9001` by user "sumvulnlab1" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
 - **File Path:** `c:\users\sumvulnlab1\desktop\tor browser\browser\torbrowser\tor\tor.exe`
@@ -139,8 +139,8 @@ DeviceNetworkEvents
 
 ### 6. File Creation - TOR Shopping List
 
-- **Timestamp:** `2024-11-08T22:27:19.7259964Z`
-- **Event:** The user "employee" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
+- **Timestamp:** `2026-10-06T02:00:15.7682797Z`
+- **Event:** The user "sumvulnlab1" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\sumvulnlab1\Desktop\tor-shopping-list.txt`
 
@@ -154,6 +154,6 @@ The user "employee" on the "threat-hunt-lab" device initiated and completed the 
 
 ## Response Taken
 
-TOR usage was confirmed on the endpoint `threat-hunt-lab` by the user `employee`. The device was isolated, and the user's direct manager was notified.
+TOR usage was confirmed on the endpoint `thlab-sam-01` by the user `samvulnlab1`. The device was isolated, and the user's direct manager was notified.
 
 ---

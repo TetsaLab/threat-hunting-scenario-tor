@@ -63,7 +63,7 @@ DeviceProcessEvents
 
 ### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
 
-Searched for any indication that user "samvulnlab1" actually opened the TOR browser. There was evidence that they did open it at `2026-10-06T01:47:16.6569195Z`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
+Searched for any indication that user "samvulnlab1" actually opened the TOR browser. There was evidence that they did open it at `2026-10-06T01:48:26.3490486Z`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
 
 **Query used to locate events:**
 

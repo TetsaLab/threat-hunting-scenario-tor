@@ -581,3 +581,23 @@ firefox.exe → 127.0.0.1:9150 → tor.exe → external network connections
 provided high-confidence evidence that the Tor Browser was actively functioning on the workstation.
 
 The investigation also reinforced the importance of distinguishing **observed evidence from assumptions**. For example, the connection to `91.158.13.188:9001` was recorded as failed, and the contents of `tor-shopping-list.txt` were not available. Those limitations were documented rather than inferred beyond what the telemetry supported.
+
+---
+
+## ⭐ Project Status
+
+**Status:** Completed  
+**Environment:** Microsoft Azure | Windows VM | Microsoft Defender for Endpoint  
+**Project Type:** Cybersecurity Threat Hunting Lab / Cyber Range  
+**Focus:** Threat Hunting | KQL | Endpoint Detection & Response | Network Analysis | Incident Investigation
+
+---
+
+## 👤 Author
+
+**Sammy Tetzba**  
+CompTIA Security+ | Microsoft Azure Fundamentals (AZ-900)
+
+*Cybersecurity | Security Operations | Incident Response | Threat Detection*
+
+🔗 [GitHub Portfolio](https://github.com/TetsaLab)

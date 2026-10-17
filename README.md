@@ -42,7 +42,7 @@ The hunt identified evidence showing that the user `samvulnlab1`:
 
 ---
 
-# Investigation Scenario
+## Investigation Scenario
 
 Management suspected employees might be using Tor Browser to bypass organizational network controls after unusual encrypted network activity was observed and anonymous reports indicated employees were discussing methods of accessing restricted websites.
 
@@ -50,7 +50,7 @@ The objective of the investigation was to determine whether Tor Browser had been
 
 ---
 
-# Threat Hunting Hypothesis
+## Threat Hunting Hypothesis
 
 If Tor Browser was installed and actively used on the workstation, evidence should exist across multiple telemetry sources.
 
@@ -67,7 +67,7 @@ Rather than relying on a single indicator, I correlated **file, process, and net
 
 ---
 
-# Investigation
+## Investigation
 
 ## 1. Tor-Related File Activity
 
@@ -138,7 +138,7 @@ The file activity was consistent with the portable Tor Browser package being ext
 
 ---
 
-# 2. Tor Browser Installer Execution
+## 2. Tor Browser Installer Execution
 
 I next searched `DeviceProcessEvents` for execution of the portable installer.
 
@@ -181,7 +181,7 @@ Shortly afterward, the Tor Browser directory structure and Tor-related files app
 
 ---
 
-# 3. Tor Browser Execution
+## 3. Tor Browser Execution
 
 The next phase of the hunt was to determine whether Tor Browser was merely present or was actually launched.
 
@@ -237,7 +237,7 @@ This activity confirmed that the browser was actively launched.
 
 ---
 
-# 4. Tor Service Execution
+## 4. Tor Service Execution
 
 At approximately **01:48:50 UTC**, `tor.exe` was executed from:
 
@@ -273,7 +273,7 @@ The remaining question was whether network traffic actually passed through Tor.
 
 ---
 
-# 5. Tor Network Activity
+## 5. Tor Network Activity
 
 I searched `DeviceNetworkEvents` for connections initiated by `tor.exe` and the Tor-packaged `firefox.exe`.
 
@@ -406,7 +406,7 @@ The successful outbound connections observed immediately before and after this e
 
 ---
 
-# Chronological Event Timeline
+## Chronological Event Timeline
 
 | Time (UTC) | Event | Evidence |
 |---|---|---|
@@ -433,7 +433,7 @@ The successful outbound connections observed immediately before and after this e
 
 ---
 
-# Evidence Correlation
+## Evidence Correlation
 
 No single event was used to determine that Tor Browser had been used.
 
@@ -470,7 +470,7 @@ This correlation distinguished **actual Tor Browser usage** from simply having a
 
 ---
 
-# Indicators Observed
+## Indicators Observed
 
 | Indicator | Value |
 |---|---|
@@ -491,7 +491,7 @@ This correlation distinguished **actual Tor Browser usage** from simply having a
 
 ---
 
-# Investigation Summary
+## Investigation Summary
 
 The threat hunt identified **high-confidence evidence of unauthorized Tor Browser usage** on workstation `thlab-sam-01` by account `samvulnlab1`.
 
@@ -523,7 +523,7 @@ At approximately **02:00:15 UTC**, `tor-shopping-list.txt` was created on the us
 
 Similarly, the investigation confirms Tor usage but does not establish exactly which websites or services the user intentionally accessed through Tor.
 
-### Final Determination
+## Final Determination
 
 **Finding:** Confirmed  
 **Activity:** Unauthorized Tor Browser execution and use  
@@ -533,7 +533,7 @@ Similarly, the investigation confirms Tor usage but does not establish exactly w
 
 ---
 
-# Response Taken
+## Response Taken
 
 Following confirmation of unauthorized Tor Browser usage:
 
@@ -545,7 +545,7 @@ These actions contained the endpoint while allowing the findings to be escalated
 
 ---
 
-# Skills Demonstrated
+## Skills Demonstrated
 
 This project provided hands-on experience with:
 
@@ -566,7 +566,7 @@ This project provided hands-on experience with:
 
 ---
 
-# Key Takeaway
+## Key Takeaway
 
 The strongest finding in this investigation was not simply the presence of `tor.exe`.
 

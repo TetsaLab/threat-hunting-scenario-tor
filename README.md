@@ -69,7 +69,7 @@ Rather than relying on a single indicator, I correlated **file, process, and net
 
 ## Investigation
 
-## 1. Tor-Related File Activity
+### 1. Tor-Related File Activity
 
 I began by searching `DeviceFileEvents` for filenames containing the string `tor` on `thlab-sam-01`.
 
@@ -86,7 +86,7 @@ DeviceFileEvents
 
 <img width="568" height="320" alt="Tor-related DeviceFileEvents results" src="https://github.com/user-attachments/assets/25f759b9-2b14-4bd2-89ad-dd71bd52b77f" />
 
-### Findings
+#### Findings
 
 At approximately **01:44:05 UTC**, the following Tor Browser installer was observed in the user's Downloads directory:
 
@@ -138,7 +138,7 @@ The file activity was consistent with the portable Tor Browser package being ext
 
 ---
 
-## 2. Tor Browser Installer Execution
+### 2. Tor Browser Installer Execution
 
 I next searched `DeviceProcessEvents` for execution of the portable installer.
 
@@ -152,7 +152,7 @@ DeviceProcessEvents
 
 <img width="692" height="313" alt="Tor Browser installer execution in DeviceProcessEvents" src="https://github.com/user-attachments/assets/a295fd55-5583-4dc0-9625-d599cc2ec501" />
 
-### Findings
+#### Findings
 
 At approximately **01:47:16 UTC**, `samvulnlab1` executed:
 
@@ -181,7 +181,7 @@ Shortly afterward, the Tor Browser directory structure and Tor-related files app
 
 ---
 
-## 3. Tor Browser Execution
+### 3. Tor Browser Execution
 
 The next phase of the hunt was to determine whether Tor Browser was merely present or was actually launched.
 
@@ -198,7 +198,7 @@ DeviceProcessEvents
 
 <img width="698" height="323" alt="Tor Browser process activity" src="https://github.com/user-attachments/assets/75ac41dc-bcab-4445-b689-3be0d5810d1b" />
 
-### Findings
+#### Findings
 
 At approximately **01:48:26 UTC**, multiple instances of:
 
@@ -237,7 +237,7 @@ This activity confirmed that the browser was actively launched.
 
 ---
 
-## 4. Tor Service Execution
+### 4. Tor Service Execution
 
 At approximately **01:48:50 UTC**, `tor.exe` was executed from:
 
@@ -273,7 +273,7 @@ The remaining question was whether network traffic actually passed through Tor.
 
 ---
 
-## 5. Tor Network Activity
+### 5. Tor Network Activity
 
 I searched `DeviceNetworkEvents` for connections initiated by `tor.exe` and the Tor-packaged `firefox.exe`.
 
@@ -297,7 +297,7 @@ DeviceNetworkEvents
 
 <img width="691" height="321" alt="Tor-related network connections in DeviceNetworkEvents" src="https://github.com/user-attachments/assets/f77b0a52-df22-4f8d-aad0-e5be360e8269" />
 
-### Successful `tor.exe` Connections
+#### Successful `tor.exe` Connections
 
 At **01:49:05 UTC**, `tor.exe` successfully established an outbound connection to:
 

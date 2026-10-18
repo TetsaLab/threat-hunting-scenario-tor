@@ -571,7 +571,7 @@ This project provided hands-on experience with:
 - Process and network correlation
 - Timeline reconstruction
 - Evidence-based incident analysis
-- Endpoint containment
+- Incident containment and escalation planning
 - Security incident documentation
 
 ---

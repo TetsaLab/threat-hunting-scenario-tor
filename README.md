@@ -533,15 +533,25 @@ Similarly, the investigation confirms Tor usage but does not establish exactly w
 
 ---
 
-## Response Taken
+## Response and Escalation
 
-Following confirmation of unauthorized Tor Browser usage:
+Following confirmation of Tor Browser activity,
+the investigation findings were documented
+for incident response review.
 
-- The affected workstation `thlab-sam-01` was isolated.
-- The activity was documented.
-- The user's direct manager was notified.
+In accordance with the simulated organization's
+acceptable-use and security requirements,
+the recommended response included:
 
-These actions contained the endpoint while allowing the findings to be escalated in accordance with the scenario's acceptable-use and security requirements.
+- Isolating the affected workstation
+- Documenting the confirmed activity
+- Notifying the user's direct manager
+- Escalating the findings for further review
+
+These actions represented the response and
+escalation procedures appropriate to the
+training scenario.
+
 
 ---
 

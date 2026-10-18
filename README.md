@@ -593,6 +593,14 @@ The investigation also reinforced the importance of distinguishing **observed ev
 
 ---
 
+## 🙏 Acknowledgments
+
+This project was based on a cybersecurity threat-hunting scenario originally developed by **Josh Madakor**.
+
+The investigation, evidence correlation, timeline reconstruction, and findings presented in this report document my hands-on analysis using Microsoft Defender for Endpoint and KQL.
+
+---
+
 ## ⭐ Project Status
 
 **Status:** Completed  

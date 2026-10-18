@@ -23,7 +23,6 @@ The hunt identified evidence showing that the user `samvulnlab1`:
 
 **Final Determination:** Confirmed Unauthorized Tor Browser Usage
 
-> [View Scenario Creation](https://github.com/TetsaLab/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
 
 ---
 
